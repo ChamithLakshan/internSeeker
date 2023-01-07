@@ -51,15 +51,25 @@
             </div>
           </form>
 
-          <form action="signup_company" class="login">
+          <form action="signup_company" method='POST' class="login">
+            {% csrf_token %}
             <div class="field">
-              <input type="text" placeholder="Email Address" required>
+              <input type="text" name="company_name" placeholder="Company Name" required>
             </div>
             <div class="field">
-              <input type="password" placeholder="Password" required>
+              <input type="text" name="ceo_name" placeholder="Name of CEO" required>
             </div>
             <div class="field">
-              <input type="password" placeholder="Confirm password" required>
+              <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="field">
+              <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="field">
+              <input type="password" name="password1" placeholder="Password" required>
+            </div>
+            <div class="field">
+              <input type="password" name="password2" placeholder="Confirm password" required>
             </div>
             <div class="field btn">
               <div class="btn-layer"></div>
