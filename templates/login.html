@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
       <title>Login Form</title>
-      <link rel="stylesheet" href="login_signup_style.css">
+      <link rel="stylesheet" href="{% static 'css/login_signup_style.css' %}">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
    <body>
@@ -26,7 +27,7 @@
             </div>
 
             <div class="form-inner">
-                <form action="#" class="login">
+                <form action="login" class="login">
                   <div class="field">
                      <input type="text" placeholder="Email Address" required>
                   </div>
@@ -42,7 +43,7 @@
                   </div>
                 </form>
 
-                <form action="#" class="login">
+                <form action="signup" class="login">
                 <div class="field">
                    <input type="text" placeholder="Email Address" required>
                 </div>
@@ -62,7 +63,7 @@
          </div>
 
          <div class="signup-link">
-            Not registered? <a href="signup.html">Signup now</a>
+            Not registered? <a href='signup'>Signup now</a>
         </div>
 
       </div>

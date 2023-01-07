@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Signup Form</title>
-    <link rel="stylesheet" href="login_signup_style.css">
+    <link rel="stylesheet" href="{% static 'css/login_signup_style.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -59,7 +60,7 @@
       </div>
 
       <div class="signup-link">
-        Already Registered? <a href="login.html">Let's Login</a>
+        Already Registered? <a href='login'>Let's Login</a>
       </div>
       
     </div>
