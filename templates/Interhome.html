@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="homestyles.css">
+</head>
+<body>
+
+    <div class="col-12" style="background-color: gray; padding: 5px; height: 50px;">
+    <div style="border-radius: 50%; width: 40px; height: 40px; background: white; display: flex; float: right; margin-right: 30px; cursor: pointer; margin-bottom: 0px; padding: 5px;"><a href=""></a></div>
+    <div style="border-radius: 50%; width: 40px; height: 40px; background: white; display: flex; float: right; margin-right: 10px; cursor: pointer; margin-bottom: 0px;"><a href=""></a></div>
+    <div style="border-radius: 50%; width: 40px; height: 40px; background: white; display: flex; float: right; margin-right: 10px; cursor: pointer; margin-bottom: 0px;"><a href=""></a></div>
+    </div>
+
+
+<div class="row">
+    
+  <div class="col-3 menu">
+      <div class="center" style="margin-top: 70px;" ></div>
+      <p class="name" style="font-weight: bold;">Nimesh Madumalka</p>
+      <p class="details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. .</p>    
+  </div>
+
+      <div class="col-9">
+          <div><p style="font-size: 30px;padding: 20px; font font-weight: bold; margin-bottom: 0px; font-weight: bold; color: ">Search Jobs</p></div>
+          <div style="margin-top: 0px; padding: 20px; padding-top: 0px; "><input type="text" value="" style="width: 100%; height: 30px; font-size: 15px; border-radius: 5px; "></div>
+          <div style="margin-top: 0px; padding: 20px; padding-top: 0px;"><input  type="button" value="Search" style="background:#191970; text-align: center; padding: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 7px; font-size: 15px; margin-top: 0px; color: white; font-weight: bold; transition-duration: 0.4s; margin: none; border: none; width: 10%; cursor: pointer;" onMouseover="this.style.backgroundColor='gray'" onMouseout="this.style.backgroundColor='#191970'"></div>
+          
+          <div style="margin-top: 0px; padding: 20px; padding-top: 0px;">Related searchs:
+          <input type="button" style="vertical-align: middle; background:gray; text-align: center; padding: 5px; border-radius: 5px; font-size: 15px; margin-top: 0px; color: white; font-weight: bold; transition-duration: 0.4s; margin: none; border: none;cursor: pointer;" value="Software Engineer" onMouseover="this.style.backgroundColor='#191970'" onMouseout="this.style.backgroundColor='gray'">  
+          <input type="button" style="vertical-align: middle; background:gray; text-align: center; padding: 5px; border-radius: 5px; font-size: 15px; margin-top: 0px; color: white; font-weight: bold; transition-duration: 0.4s; margin: none; border: none;cursor: pointer;" onMouseover="this.style.backgroundColor='#191970'" onMouseout="this.style.backgroundColor='gray'" value="Data Analyst">  
+              
+          <input type="button" style="vertical-align: middle; background:gray; text-align: center; padding: 5px; border-radius: 5px; font-size: 15px; margin-top: 0px; color: white; font-weight: bold; transition-duration: 0.4s; margin: none; border: none;cursor: pointer;" onMouseover="this.style.backgroundColor='#191970'" onMouseout="this.style.backgroundColor='gray'" value="Game developer">  
+              
+          </div>
+          
+          <div style="margin-top: 0px; padding-top: 0px; padding-left: 20px; padding-right: 20px; border-radius: 30px; background-color: white;">
+                    <div class="card">
+                      <div class="container">
+                        <h4><b>Software Engineer - Integration job from WSO2 in Colombo, Sri Lanka</b></h4> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span id="dots">...</span><span id="more"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span><button onclick="myFunction()" id="myBtn" style=" background-color: transparent; border: none; cursor: pointer; font-size: 15px; color: #191970;">Read more</button> </p>
+                        
+                      </div>
+                        <div style="padding: 20px; padding-bottom: 0px; padding-top: 0px;"><a href="jobapply.html"><input type="button" value="Apply" style="background:#191970; text-align: center;padding-left: 0px; padding: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 7px; font-size: 15px; margin-top: 0px; color: white; font-weight: bold; transition-duration: 0.4s; margin: none; border: none; width: 15%; cursor: pointer;" onMouseover="this.style.backgroundColor='gray'" onMouseout="this.style.backgroundColor='#191970'"></a></div>
+                    </div>
+          
+          </div>
+          
+          </div>
+          
+          
+
+          
+          
+      </div>
+      
+  </div>
+  <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</body>
+</html>
