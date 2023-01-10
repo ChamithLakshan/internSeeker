@@ -6,6 +6,8 @@ from django.contrib.auth.models import auth
 # Create your views here.
 def login(request):
     return render(request, 'login.html')
+def logout(request):
+    return render(request, 'login.html')
 
 
 def signup(request):
@@ -86,7 +88,7 @@ def login_intern(request):
 
 
         if Intern.objects.filter(username=uname).exists() and Intern.objects.filter(password=pw).exists():
-            return render(request, 'homepage.html')
+            return render(request, 'internhome.html',{'username':uname})
         else:
             messages.info(request,'Invalid username or password')
             return redirect('login')
@@ -107,3 +109,12 @@ def login_company(request):
             return redirect('login')
     else:
         return redirect('login')
+
+def internhome(request):
+    return render(request, 'internhome.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def contact(request):
+    return render(request, 'contact.html')

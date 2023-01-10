@@ -1,8 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="homestyles.css">
+<link rel="stylesheet" href="{%static 'css/homestyles.css' %}">
 </head>
 <body>
 
@@ -41,7 +42,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span id="dots">...</span><span id="more"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span><button onclick="myFunction()" id="myBtn" style=" background-color: transparent; border: none; cursor: pointer; font-size: 15px; color: #191970;">Read more</button> </p>
                         
                       </div>
-                        <div style="padding: 20px; padding-bottom: 0px; padding-top: 0px;"><a href="jobapply.html"><input type="button" value="Apply" style="background:#191970; text-align: center;padding-left: 0px; padding: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 7px; font-size: 15px; margin-top: 0px; color: white; font-weight: bold; transition-duration: 0.4s; margin: none; border: none; width: 15%; cursor: pointer;" onMouseover="this.style.backgroundColor='gray'" onMouseout="this.style.backgroundColor='#191970'"></a></div>
+                        <div style="padding: 20px; padding-bottom: 0px; padding-top: 0px;"><a href='applyjob'><input type="button" value="Apply" style="background:#191970; text-align: center;padding-left: 0px; padding: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 7px; font-size: 15px; margin-top: 0px; color: white; font-weight: bold; transition-duration: 0.4s; margin: none; border: none; width: 15%; cursor: pointer;" onMouseover="this.style.backgroundColor='gray'" onMouseout="this.style.backgroundColor='#191970'"></a></div>
                     </div>
           
           </div>
